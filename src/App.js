@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import KakaoLoginComplete from "./Components/Login/KakaoLoginComplete"
+import KakaoLogin from "./Components/Login/KakaoLogin"
 
 function App() {
+  // useEffect(() => {
+  //   if (window.Kakao) {
+  //     window.Kakao.init(REST_API_KEY); // 발급받은 키를 넣습니다.
+  //   }
+  // }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+          <Routes>
+              <Route path="/kakaoLoginComplete" element={<KakaoLoginComplete />} />
+              <Route path="/" element={<KakaoLogin />} />
+          </Routes>
+      </Router>
   );
 }
 
