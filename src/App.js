@@ -5,11 +5,6 @@ import KakaoLoginComplete from "./Components/Login/KakaoLoginComplete"
 import KakaoLogin from "./Components/Login/KakaoLogin"
 
 function App() {
-  // useEffect(() => {
-  //   if (window.Kakao) {
-  //     window.Kakao.init(REST_API_KEY); // 발급받은 키를 넣습니다.
-  //   }
-  // }, []);
   return (
       <Router>
           <Routes>

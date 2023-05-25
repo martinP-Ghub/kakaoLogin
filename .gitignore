@@ -3,6 +3,9 @@
 #api key
 AppKey.js
 
+#backend, server Address
+Properties.js
+
 # dependencies
 /node_modules
 /.pnp
