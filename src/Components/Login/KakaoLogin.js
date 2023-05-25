@@ -10,9 +10,6 @@ function KakaoLogin() {
         const KAKAO_URL = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
         window.location.href = KAKAO_URL;
     };
-    // http://localhost:3002/kakaologinComplete?code=-UOPbx7BtaPK7x6QT29l1SoXHh1dWnWnS7WFyMEWklLT90u8OBFShkIC3mV8nhNr3bAXywoqJVMAAAGIQkzCrg
-    // http://localhost:3002/kakaologinComplete?code=1kwTT8Q9BHg_8iUewatrp4P9kOruI4jwVV5vBUj0en2FJ7Gi3klnXbI7J-ms4D_ceixp-wopyNoAAAGIQlGoeg
-
 
     // 카카오 로그인 후 리다이렉트된 경우에 실행되는 함수
     const handleToken = async () => {
